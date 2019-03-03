@@ -2,8 +2,8 @@ var express = require("express");
 var logger = require("morgan");
 var mongoose = require("mongoose");
 
-
 var PORT = 3000;
+
 
 // Initialize Express
 var app = express();

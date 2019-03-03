@@ -3,10 +3,30 @@
 $.getJSON("/articles", function (data) {
  // For each one
  for (var i = 0; i < data.length; i++) {
-  // Display the apropos information on the page
-  $("#articles").append("<button data-id='" + data[i]._id + "' class='deletebtn'>X</button><p data-id='" + data[i]._id + "'>" + data[i].title + "<br />" + data[i].link + "</p>");
+// Display the apropos information on the page
+$("#articles").append("<button data-id='" + data[i]._id + "' class='deletebtn btn-danger'>Delete</button><button data-id='" + data[i]._id + "' class='savebtn btn-success' data-id='" + data[i]._id + "'>Save Article</button><p data-id='" + data[i]._id + "'>" + data[i].title + "<br />" + data[i].link + "<br /><img src='" + data[i].photo + "' /><br />" + data[i].author + "</p>");
+
+
 }
 });
+
+$(document).on("click", ".savebtn", function () {
+
+  //  alert("id:" +$(this).attr("data-id"));
+  var thisId = $(this).attr("data-id");
+
+  $.ajax({
+    method: "PUT",
+    url: "/saved/" + thisId,
+    data: { } // this has to be an empty object, we only want to use it for saved field
+  })
+// With that done
+.then(function (data) {
+  $("#saved-articles").append(data.saved);
+});
+
+});
+
 
 
 // Whenever someone clicks a p tag

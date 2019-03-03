@@ -1,13 +1,67 @@
-<div id="wrapper">
-  <a href="/scrape">start scraping...</a>
-  <h1>Note Scraper</h1>
-  <h2><i>If you can do this...the homework should be no problem.</i></h2>
+{{!-- <h2>Get the latest News!!</h2> --}}
 
-     
+  <div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<ul class="nav">
+				<li class="nav-item">
+				<button class="btn btn-success"><a class="nav-link active" href="#">Home</a></button>	<br>
+				</li>
+				<li class="nav-item">
+					<button class="btn btn-success"><a href="/scrape">Click Here to get the new articles!</a></button><br><br>
+				</li>
+				<li class="nav-item">
+						<button class="btn btn-success"><a class="nav-link disabled" href="/saved-articles.handlebars">SAVED ARTICLES</a></button><br>
+				</li>
+			</ul>
+		</div>
+	</div>
+  {{!-- navbar ending. first row-12 ending --}}
+	<div class="row">
+		<div class="col-md-8">
+			<div class="jumbotron">
+				 <div id="articles">  </div>
+          {{!-- articles will appear here --}}
+		</div>
+	</div>
+  <div class="col-md-4">
+			  <div id="notes"></div>
+        {{!-- notes/comments will appear here --}}
+		</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+{{!--  
+  <div id="wrapper">
+    <div class="card"> 
+  <img class="card-img" src="/NewsScraping/public/assets/images/mennews.jpg" alt="Card image"> 
+  <div class="card-img-overlay"> 
+    <p class="card-text">I'm text that has a background image!
+    </p> </div> </div>
+
+  <div id="buttons">
+      <button class="btn" id="action-button">Save</button>
+      <button class="btn" id="view-saved">View saved comment</button>
+      <button class="btn" id="view-scrape">View scraped articles</button>
+    </div>
+
+  <a href="/scrape">Click Here to get the new articles!</a>
+  
          
       <div id="articles">  </div>
-      <div id="notes"></div>
- 
-   
+      <div id="notes"></div>   --}}
 
-</div>
+
+
+
+
+
+ 
