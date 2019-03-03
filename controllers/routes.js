@@ -112,7 +112,7 @@ app.put("/saved/:id", function (req, res) {
 
 //creating route for article is saved and
 // called the saved handlebars.
-app.get("/saved-articles", function (req, res) {
+app.get("/saved", function (req, res) {
   // Grab every document in the Articles collection where saved is true
   db.Article.find({ saved: true })
     .then(function (data) {

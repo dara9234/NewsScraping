@@ -26,16 +26,27 @@ thead{
    font-weight: bold;
 } */ 
 
-.nav {background-image: url("../images/greenclock.jpg");
-  padding: 20px;
-}
-
-.nav-item:hover{
-  color: gray;
-  border: solid sandybrown 1px;
+.nav {background-image: url("../images/food_bg12.png");
+  padding: 30px;
   
-
 }
+
+.nav-item a:hover{
+  color: purple;
+  border: solid sandybrown 0.5px;
+}
+
+.nav-item a {
+  float: left;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+ 
+
+
 
 
 
