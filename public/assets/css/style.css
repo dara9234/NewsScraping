@@ -1,6 +1,6 @@
-/* .jumbotron {
+ /* .jumbotron {
   color: white;
-  background-image: url("../images/train_bg.jpg");
+  background-image: url("../images/mennews.jpg");
   background-repeat: no-repeat;
   text-align:center;
   text-decoration: white; 
@@ -24,9 +24,18 @@ thead{
 .formLable{
    font-size: 16px;
    font-weight: bold;
-} */
+} */ 
 
-.nav {background-image: url("../images/greenclock.jpg");}
+.nav {background-image: url("../images/greenclock.jpg");
+  padding: 20px;
+}
+
+.nav-item:hover{
+  color: gray;
+  border: solid sandybrown 1px;
+  
+
+}
 
 
 
